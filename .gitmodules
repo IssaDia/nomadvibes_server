@@ -1,0 +1,3 @@
+[submodule "api_contract"]
+	path = api_contract
+	url = https://github.com/IssaDia/nomadvibes_api_contract.git
