@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import {
   loginUserSchemaType,
   registerUserSchemaType,
-} from '../../../apiTypes/user.validator';
+} from '../../../api_contract/user.validator';
 import { createUser, loginUser } from './user.service';
 
 export async function postLoginUser(req: Request, res: Response) {
