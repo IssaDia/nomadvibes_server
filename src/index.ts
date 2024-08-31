@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import express, { Router } from 'express';
-import router from './ressources/router';
+// import router from './ressources/router';
 import morgan from 'morgan';
+import router from '../api_contract/routes';
 
 const app = express();
 const port = 3000;

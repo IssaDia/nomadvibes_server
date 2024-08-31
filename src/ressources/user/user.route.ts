@@ -2,13 +2,13 @@ import { Router } from 'express';
 import { postLoginUser, postRegisterUser } from './user.controller';
 import validate from '../../middlewares/schemaValidator';
 import {
-  registerUserSchema,
-  loginUserSchema,
-} from '../../../apiTypes/user.validator';
+  registerUserInputSchema,
+  loginUserInputSchema,
+} from '../../../api_contract/user.validator';
 
 const router = Router();
 
-router.post('/login', validate(loginUserSchema), postLoginUser);
-router.post('/register', validate(registerUserSchema), postRegisterUser);
+router.post('/login', validate(loginUserInputSchema), postLoginUser);
+router.post('/register', validate(registerUserInputSchema), postRegisterUser);
 
 export default router;

@@ -2,7 +2,7 @@ import db from '../../utils/db';
 import {
   loginUserSchemaType,
   registerUserSchemaType,
-} from '../../../apiTypes/user.validator';
+} from '../../../api_contract/user.validator';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 /**
